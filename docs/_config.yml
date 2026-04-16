@@ -1,0 +1,22 @@
+theme: jekyll-theme-primer
+plugins:
+  - jekyll-coffeescript
+  - jekyll-commonmark-ghpages
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+  - .gitignore
+  - README.md
+
+future: true
+github: [metadata]
