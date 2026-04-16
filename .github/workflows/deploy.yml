@@ -39,13 +39,16 @@ jobs:
         run: npm run build
         working-directory: frontend
       
+      - name: Copy dist to root
+        run: cp -r frontend/dist/* ./
+      
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: frontend/dist
+          path: .
       
       - name: Deploy to GitHub Pages
         id: deployment
